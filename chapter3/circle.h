@@ -1,9 +1,8 @@
-#ifdef CIRCLE_H
+#ifndef CIRCLE_H
 #define CIRCLE_H
-#endif
 
 #include <iostream>
-#include "Shape.h"
+#include "shape.h"
 #include "point.h"
 
 class Circle : public Shape {
@@ -18,3 +17,5 @@ class Circle : public Shape {
         Point c; // center
         int radius;
 };
+
+#endif

@@ -1,6 +1,5 @@
 #ifndef CONTAINER_H 
 #define CONTAINER_H 
-#endif
 // Virtual class
 // A class with pure virtual function is called an abstract class
 // A class that provides an interface to a variety of other classes
@@ -16,6 +15,7 @@ class Container {
         virtual ~Container() {};                   // destructor
 };
 
+#endif
 /*
 This class can be used like this
 void use(Container& c)

@@ -1,6 +1,5 @@
 #ifndef VECTOR_H 
 #define VECTOR_H 
-#endif
 
 #include <algorithm>
 
@@ -14,9 +13,11 @@ class Vector {
         {
             std::copy(list.begin(), list.end(), elem);
         }
+
         // function/operator overloading
         double& operator[](int i) { return elem[i]; };
         size_t size() const { return sz; };
+        Vector& operator=(const Vector& a);
 
         // Destructor - Free memory from the heap
         // User doesn't have to call the destructor, once the 
@@ -26,3 +27,4 @@ class Vector {
         double* elem; // pointer to the elements
         size_t sz;
 };
+#endif

@@ -1,11 +1,10 @@
 #ifndef VECTOR_CONTAINER_H 
 #define VECTOR_CONTAINER_H 
-#endif
 
 #include <initializer_list>
 
-#include "Container.h"
-#include "Vector.h"
+#include "container.h"
+#include "vector.h"
 
 class Vector_container : public Container {
     public:
@@ -17,3 +16,5 @@ class Vector_container : public Container {
     private:
         Vector v;
 };
+
+#endif
